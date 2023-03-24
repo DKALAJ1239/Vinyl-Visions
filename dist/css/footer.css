@@ -1,0 +1,16 @@
+/* This is the CSS styling for each pages footer */
+
+/* Adding styles for the website-footer section */
+
+/* Using flex display and aligning items and justifying the content between them */
+
+#website-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    background-color: #130601;
+    color: #F97068;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}

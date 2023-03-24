@@ -1,0 +1,258 @@
+<!-- HTML page display the products of my website -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Page name -->
+    <title>Vinyl Visions | Products</title>
+    <!-- Links to stylesheets and favicon -->
+    <link rel="shortcut icon" href="../img/favicon-logo-main.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/product-cards.css" />
+    <link rel="stylesheet" href="../output.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+</head>
+
+<!-- The code represents a webpage with a header that contains a navigation bar with a logo and menu options, 
+    and a main section that displays a product grid. The product grid has a dropdown menu to filter genres, 
+    and each product is displayed as a card with an image, title, artist name, genre, and two buttons for 
+    ordering or displaying more details. -->
+
+<body class="bg-neutral-800">
+    <div id="app-container" class="container-class">
+        <!--header of the page contains nav bar as html list-->
+        <header id="website-header">
+            <nav id="navigation-menu" class="navbar mx-5">
+                <!-- Logo for navigation bar -->
+                <img src="../img/brand.PNG" class="logo" alt="website logo" width="120px" height="60px" />
+
+                <!-- Navigation menu options -->
+                <ul class="nav-links">
+                    <!-- Hamburger button for mobile screens -->
+                    <input type="checkbox" id="checkbox_toggle" />
+                    <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+                    <!-- Navigation menu list -->
+                    <div class="menu">
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="./products.html">Products</a></li>
+                        <li class="projects_primary">
+                            <a href="./aboutUs.html">About</a>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main section displaying the product grid -->
+        <main id="product-cards" class="mx-5 my-5">
+            <!-- Dropdown menu to filter genres -->
+            <div class="dropdown-main my-5">
+                <div class="dropdown-btn">
+                    <label id="genre-label" for="genre-filter">Choose a Genre:</label>
+                    <select name="gerne-filter" id="genre-filter">
+                        <option value="Indie">Indie</option>
+                        <option value="Pop">Pop</option>
+                        <option value="Rap">Rap</option>
+                        <option value="Rock">Rock</option>
+                        <option value="Hip-Hop">Hip-Hop</option>
+                        <option value="Electronic">Electronic</option>
+                        <option value="House">House</option>
+                        <option value="Funk/Soul">Funk/Soul</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <!-- Product grid section -->
+                <div class="product-grid">
+                    <!-- Card 1: Implementing a card body, footer, and over card class. Shadow implemented as well.-->
+                    <div class="card card-shadow" id="card 1">
+                        <div class="card-header card-image">
+                            <img src="../img/vinyl-dont-forget-about-me-demos.jpg" alt="Dominic Fike Album"/>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="text-2xl font-bold mb-4">
+                                Don't Forget About Me, Demos
+                            </h2>
+                            <p class="text-lg mb-2">Artist: Dominic Fike</p>
+                            <p class="text-lg mb-2 genre">Genre:Rock, Pop, Indie</p>
+                        </div>
+
+                        <div class="card-footer">
+                            <button class="btn">Order</button>
+                            <button class="btn btn-outline">More Details</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Implementing a card body, footer, and over card class. Shadow implemented as well.-->
+                    <div class="card card-shadow" id="card 2">
+                        <div class="card-header card-image">
+                            <img src="../img/vinyl-big-steppers.jpg" alt="Kendrick Lamar Album"/>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="text-2xl font-bold mb-4">
+                                Mr. Morale & the Big Steppers
+                            </h2>
+                            <p class="text-lg mb-2">Artist: Kendrick Lamar</p>
+                            <p class="text-lg mb-2 genre">
+                                Genre:Hip-Hop, Funk/Soul
+                            </p>
+                        </div>
+
+                        <div class="card-footer">
+                            <button class="btn">Order</button>
+                            <button class="btn btn-outline">More Details</button>
+                        </div>
+                    </div>
+
+
+                    <!-- The following code creates a card for an album, which includes a header with an image, a body 
+                        with album information such as title, artist, and genre, a footer with buttons for ordering 
+                        or more details, and a shadow effect. Implemented in cards 1 through 9. -->
+
+                    <!-- Card 3: Implementing a card body, footer, and over card class. Shadow implemented as well.-->
+                    <div class="card card-shadow" id="card 3">
+                        <div class="card-header card-image">
+                            <img src="../img/vinyl-baby-keem-melodic-blue.jpg" alt="Baby Keem Album"/>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="text-2xl font-bold mb-4">The Melodic Blue</h2>
+                            <p class="text-lg mb-2">Artist: Baby Keem</p>
+                            <p class="text-lg mb-2 genre">Genre:Rap</p>
+                        </div>
+
+                        <div class="card-footer">
+                            <button class="btn">Order</button>
+                            <button class="btn btn-outline">More Details</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: Implementing a card body, footer, and over card class. Shadow implemented as well.-->
+                    <div class="card card-shadow" id="card 4">
+                        <div class="card-header card-image">
+                            <img src="../img/vinyl-flower-boy.jpg" alt="TYler, The Creater Album"/>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="text-2xl font-bold mb-4">Scum F*** Flower Boy</h2>
+                            <p class="text-lg mb-2">Artist: Tyler, The Creator</p>
+                            <p class="text-lg mb-2 genre">
+                                Genre:Hip-Hop
+                            </p>
+                        </div>
+
+                        <div class="card-footer">
+                            <button class="btn">Order</button>
+                            <button class="btn btn-outline">More Details</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 5: Implementing a card body, footer, and over card class. Shadow implemented as well.-->
+                    <div class="card card-shadow" id="card 5">
+                        <div class="card-header card-image">
+                            <img src="../img/vinyl-ready-to-die.png" alt="B.I.G. Album"/>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="text-2xl font-bold mb-4">Ready To Die</h2>
+                            <p class="text-lg mb-2">Artist: The Notorious B.I.G</p>
+                            <p class="text-lg mb-2 genre">Genre:Hip-Hop</p>
+                        </div>
+
+                        <div class="card-footer">
+                            <button class="btn">Order</button>
+                            <button class="btn btn-outline">More Details</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 6: Implementing a card body, footer, and over card class. Shadow implemented as well.-->
+                    <div class="card card-shadow" id="card 6">
+                        <div class="card-header card-image">
+                            <img src="../img/vinyl-stories.jpg" alt="Avicii Album"/>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="text-2xl font-bold mb-4">Stories</h2>
+                            <p class="text-lg mb-2">Artist: Avicii</p>
+                            <p class="text-lg mb-2 genre">Genre:Electronic, Pop, House</p>
+                        </div>
+
+                        <div class="card-footer">
+                            <button class="btn">Order</button>
+                            <button class="btn btn-outline">More Details</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 7: Implementing a card body, footer, and over card class. Shadow implemented as well.-->
+                    <div>
+                        <div class="card card-shadow" id="card 7">
+                            <div class="card-header card-image">
+                                <img src="../img/vinyl-cat-stevens.jpg" alt="Cat Stevens Album"/>
+                            </div>
+                            <div class="card-body">
+                                <h2 class="text-2xl font-bold mb-4">Cat Stevens' Greatest</h2>
+                                <p class="text-lg mb-2">Artist: Cat Stevens</p>
+                                <p class="text-lg mb-2 genre">Genre:Rock</p>
+                            </div>
+
+                            <div class="card-footer">
+                                <button class="btn">Order</button>
+                                <button class="btn btn-outline">More Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 8: Implementing a card body, footer, and over card class. Shadow implemented as well.-->
+                    <div>
+                        <div class="card card-shadow" id="card 8">
+                            <div class="card-header card-image">
+                                <img src="../img/vinyl-unorthodox-jukebox.jpg" alt="Bruno Mars Album"/>
+                            </div>
+                            <div class="card-body">
+                                <h2 class="text-2xl font-bold mb-4">Unorthodox Jukebox</h2>
+                                <p class="text-lg mb-2">Artist: Bruno Mars</p>
+                                <p class="text-lg mb-2 genre">Genre:Electronic, Rock, Funk/Soul, Pop</p>
+                            </div>
+
+                            <div class="card-footer">
+                                <button class="btn">Order</button>
+                                <button class="btn btn-outline">More Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 9: Implementing a card body, footer, and over card class. Shadow implemented as well.-->
+                    <div>
+                        <div class="card card-shadow" id="card 9">
+                            <div class="card-header card-image">
+                                <img src="../img/vinyl-sour.jpg" alt="Olivia Rodrigo Album"/>
+                            </div>
+                            <div class="card-body">
+                                <h2 class="text-2xl font-bold mb-4">Sour</h2>
+                                <p class="text-lg mb-2">Artist: Olivia Rodrigo</p>
+                                <p class="text-lg mb-2 genre">Genre:Pop Rock, Pop Punk, Pop</p>
+                            </div>
+
+                            <div class="card-footer">
+                                <button class="btn">Order</button>
+                                <button class="btn btn-outline">More Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </main>
+
+    <!-- The following code creates the footer of the webpage, which contains copyright information. -->
+    <footer class="mx-5" id="website-footer">
+        <span id="footer-text">&copy; Vinyl Visions 2023. All rights reserved.</span>
+    </footer>
+    <!-- End of footer -->
+    </div>
+    <!-- The following code imports a JavaScript file used for filtering content. Rendering issues occurred even with the keyword to make it render right. -->
+    <script src="../js/filter.js"></script>
+</body>
+
+</html>

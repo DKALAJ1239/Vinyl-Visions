@@ -1,0 +1,55 @@
+/*CSS styling for the about us page*/
+
+/* Setting the font family to Arial and sans-serif and line height to 1.5 */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+/* Setting the font weight of h1, h2, h3 to normal */
+h1,
+h2,
+h3 {
+  font-weight: normal;
+}
+
+/* Removing the margin from the h1 tag inside the header tag */
+header h1 {
+  margin: 0;
+}
+
+/* Increasing the font size of the h2 tag */
+h2 {
+  font-size: xx-large;
+}
+
+/* Increasing the font size of the h3 tag */
+h3 {
+  font-size: x-large;
+}
+
+/* Setting the font size of p tag to large */
+p {
+  font-size: large;
+}
+
+/* Adding border radius to the team-member class image and setting its height */
+.team-member img {
+  border-radius: 25px;
+  height: 20rem;
+}
+
+/* Adding color, border-radius, and background-color to the aboutUs class */
+.aboutUs {
+  color: #f97068;
+  border-radius: 25px;
+  background-color: #d6d3f0;
+}
+
+/* Setting the maximum width of all images to 50% and adding border-radius */
+img {
+  max-width: 50%;
+  border-radius: 10px;
+}

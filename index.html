@@ -1,0 +1,129 @@
+<!-- Main landing page. Displays a welcome sign, and a slideshow for the sales. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Set the title of the document -->
+  <title>Vinyl Visions | Welcome!</title>
+  <!-- Add a favicon to the page -->
+  <link rel="shortcut icon" href="./dist/img/favicon-logo-main.png" type="image/x-icon" />
+  <!-- Add stylesheets to the page -->
+  <link rel="stylesheet" href="./dist/css/index.css" />
+  <link rel="stylesheet" href="./dist/css/navbar.css" />
+  <link rel="stylesheet" href="./dist/output.css" />
+  <link rel="stylesheet" href="./dist/css/footer.css" />
+  <!-- Add a JavaScript file for the carousel slideshow -->
+  <script src="./dist/js/carouselSlideShow.js"></script>
+</head>
+
+
+<!-- Main body class fort his page -->
+<!-- Start of page container -->
+
+<body class="bg-neutral-800">
+  <div id="app-container" class="container-class">
+    <!--header of the page contains nav bar as html list-->
+    <!-- Start of page header containing navigation bar -->
+    <header id="website-header">
+      <nav id="navigation-menu" class="navbar mx-5">
+        <!-- Add the website logo to the navigation bar -->
+        <img src="./dist/img/brand.PNG" class="logo" alt="website logo" width="120px" height="60px" />
+
+        <!-- Add the navigation menu options -->
+        <ul class="nav-links">
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+          <!-- Add the menu items for the navigation bar -->
+          <div class="menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./dist/pages/products.html">Products</a></li>
+            <li class="projects_primary">
+              <a href="./dist/pages/aboutUs.html">About</a>
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </header>
+    <!-- End of page header -->
+
+    <!-- Start of main content section -->
+    <main id="vinyl-slideshow" class="mx-5 my-5 shadow-xl shadow-white">
+      <br>
+      <!-- Add welcome message to the main content section -->
+      <div class="welcome-tag my-5 mx-5 text-4xl font-bold">
+        <h1 id="welcome-words">
+          WELCOME TO VINYL VISION!
+        </h1>
+        <h2 id="welcome-words">
+          Sale! Up to 50% until May!
+        </h2>
+      </div>
+
+      <!-- Add a carousel slideshow to the main content section using the "slideshow-container" and "mySlides" classes -->
+      <!-- Each "mySlides" div contains an image with a caption -->
+      <!-- The "prev" and "next" buttons allow the user to navigate the slideshow -->
+      <!-- The "dot" span elements at the bottom of the slideshow allow the user to navigate to a specific slide -->
+
+      <!-- Start of main content section -->
+
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+
+        <!-- Slide 1 -->
+        <div class="mySlides fade aspect-video object-cover">
+          <img src="./dist/img/vinyl-after-hours.jpg" alt="The Weeknd Album" style="width: 100%" onload="showSlides(1)" />
+          <div
+            class="text-4xl font-bold text-transparent bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 bg-clip-text">
+            30% OFF!
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="mySlides fade aspect-video object-cover">
+          <img src="./dist/img/vinyl-heroes-and-villians.jpg" alt="Metro Boomin' Album" style="width: 100%" />
+          <div
+            class="text-4xl font-bold text-transparent bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 bg-clip-text">
+            20% OFF!
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="mySlides fade aspect-video object-cover">
+          <img src="./dist/img/vinyl-hoodie-szn.jpg" alt="A Boogie Album" style="width: 100%" />
+          <div
+            class="text-4xl font-bold text-transparent bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 bg-clip-text">
+            50% OFF!
+          </div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br />
+
+      <!-- The dots/circles for each slide -->
+      <div style="text-align: center">
+        <div class="bg-gray-600 hover:bg-gray-800 transition-all duration-300 rounded-bl-lg rounded-br-lg">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
+    </main>
+    <!-- End of main content section -->
+    
+    <!-- Footer of the page containing copyright information -->
+    <footer class="mx-5" id="website-footer">
+      <span id="footer-text">&copy; Vinyl Visions 2023. All rights reserved.</span>
+    </footer>
+  </div>
+</body>
+
+</html>

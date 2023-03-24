@@ -1,0 +1,148 @@
+<!-- The html page for the aboutUs info of a website. -->
+
+<!-- The doctype declaration defines the version of HTML being used. Opening html tag is specified as well. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- The <head> section contains meta information and links to CSS and other resources. -->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Links to external CSS files. -->
+  <link rel="stylesheet" href="../css/navbar.css" />
+  <link rel="stylesheet" href="../output.css" />
+  <link rel="stylesheet" href="../css/footer.css" />
+  <link rel="stylesheet" href="../css/aboutUs.css" />
+
+  <!-- The <title> tag specifies the title of the page. -->
+  <title>Vinyl Visions | About US</title>
+  <!-- Link to favicon. -->
+  <link rel="shortcut icon" href="../img/favicon-logo-main.png" type="image/x-icon" />
+>
+</head>
+
+
+<!-- The <body> tag specifies the main content of the HTML document. -->
+
+<body class="main-body bg-neutral-800">
+  <div id="app-container" class="container-class">
+
+    <!-- The <header> tag specifies the header of the HTML document. -->
+    <!--header of the page contains nav bar as html list-->
+    <header id="website-header">
+      <!-- The <nav> tag specifies a section for navigation links. -->
+      <nav id="navigation-menu" class="navbar mx-5">
+        <!-- Nav bar logo implemented here. -->
+        <img src="../img/brand.PNG" class="logo" alt="website logo" width="120px" height="60px" />
+        <!-- Navbar options. Keeping it as a checkbox toggle to implement hamburger menu later. -->
+        <ul class="nav-links">
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+          <!-- Navbar menu options -->
+          <div class="menu">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="./products.html">Products</a></li>
+            <li class="projects_primary">
+              <a href="./aboutUs.html">About</a>
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </header>
+    <!--main body of the page-->
+    <main class="aboutUs mx-5 my-5">
+      <!-- Section used to describe information of the company -->
+      <section class="about-us-content mx-5 my-5">
+        <br />
+        <h2>About Us</h2>
+        <p>
+          We are a team of music enthusiasts who are passionate about vinyl
+          records. We believe that there is something special about the
+          experience of listening to music on a record player that cannot be
+          replicated by digital formats. Our goal is to share our love of
+          vinyl with others and provide a platform where people can discover
+          new music, connect with other collectors, and learn more about the
+          history and culture surrounding vinyl records.
+        </p>
+      </section>
+      <br>
+      <!-- A section describing the team and providing a photo of them as well. -->
+      <section class="team mx-5 my-5 flex items-center justify-center flex-col">
+        <h2>Meet the Team</h2>
+        <br>
+        <div class="team-member">
+          <h3>Dom</h3>
+          <p>Founder and CEO</p>
+          <div class="member-img-text-1" id="member-img-text">
+            <img src="../img/sal.png" alt="Team Member Dom" />
+            <p>
+              Dom is the driving force behind our company. As a lifelong music fan, they became hooked on vinyl in their
+              early teens and
+              has been collecting ever since. Their vision for the company is to create a community of vinyl lovers who
+              can come
+              together to share their passion for music.
+            </p>
+          </div>
+          <br>
+        </div>
+        <div class="team-member">
+          <h3>Joe</h3>
+          <p>Head of Marketing</p>
+          <div class="member-img-text-2" id="member-img-text">
+            <img src="../img/joe.jpg" alt="Team Member Joe" />
+            <p>
+              Joe is responsible for spreading the word about our company and helping us connect with our audience. With
+              a
+              background in
+              digital marketing, they are constantly coming up with new and creative ways to promote our brand and
+              engage with our
+              community.
+            </p>
+          </div>
+          <br>
+        </div>
+        <div class="team-member">
+          <h3>Larry</h3>
+          <p>Head of Design</p>
+          <div class="member-img-text-3" id="member-img-text">
+            <img src="../img/murray.png" alt="Team Member Larry" />
+            <p>
+              Larry is the creative mind behind our website and visual branding. With a keen eye for design and a love
+              of all
+              things retro, they have helped us create a website that captures the essence of the vinyl experience.
+            </p>
+          </div>
+          <br>
+        </div>
+      </section>
+      <br>
+
+      <!-- A section to desribe the mission of the company in detail. -->
+      <section class="mission mx-5 my-5">
+        <h2>Our Mission</h2>
+        <p>
+          At Vinyl Visions, our mission is to create a space where music
+          lovers can come together to share their passion for vinyl. We
+          believe that music is more than just a commodity to be consumed -
+          it's an experience that should be savored and enjoyed.
+        </p>
+        <p>
+          Whether you're a seasoned collector or a newcomer to the world of
+          vinyl, we invite you to join us on this journey. Let's celebrate the
+          beauty of music together.
+        </p>
+        <br />
+      </section>
+    </main>
+    <!--footer of the page contains copyright information-->
+    <footer class="mx-5" id="website-footer">
+      <span id="footer-text">&copy; Vinyl Visions 2023. All rights reserved.</span>
+    </footer>
+  </div>
+</body>
+
+</html>

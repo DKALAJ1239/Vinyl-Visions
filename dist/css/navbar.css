@@ -1,0 +1,181 @@
+/* CSS styling for the navbar on top of the pages on every page. */
+
+/*Color codes for the main colors used*/
+/*
+black --> 130601
+Light Red --> F97068
+Lavender (light purple-blue) --> D6D3F0
+Light Green --> #D4E09B
+Dark Green --> #9CB380
+*/
+
+
+/* basic styling to override default browser behaviors */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* font family and making sure no stylings done to text in beginnning*/
+/* set font family and remove any initial stylings applied to text */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* remove underline from links */
+a {
+    text-decoration: none;
+}
+
+/* remove bullet points from lists */
+li {
+    list-style: none;
+}
+
+/* start styling the navbar using flex property of css */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    background-color: #130601;
+    color: #F97068;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+/* set color of nav links */
+.nav-links a {
+    color: #F97068;
+}
+
+/* change color of nav links when hovered over */
+.nav-links:hover {
+    color: #D6D3F0;
+}
+
+/* set properties for the logo */
+.logo {
+    width: 210px;
+    height: 75px;
+    border-radius: 10px;
+}
+
+/* set properties for the navbar menu options */
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 24px;
+}
+
+/* set background color, border radius, and transition properties for menu options when hovered over */
+.menu li {
+    background-color: #D6D3F0;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+/* use of pseudo class */
+/* change background color and border radius when menu option is hovered over */
+.menu li:hover {
+    background-color: #777777;
+    border-radius: 10px;
+    transition: 0.3s ease;
+
+}
+
+/* set padding for menu options */
+.menu li {
+    padding: 5px 100px;
+}
+
+/* style dropdown menu */
+.projects_primary {
+    position: relative;
+}
+
+/* display dropdown menu when hovered over */
+.projects_primary:hover .dropdown {
+    /*applies the heirarchy of the .dropdown being child of projects */
+    /* color: brown; */
+    display: block;
+}
+
+/* set properties for h1 tag */
+h1 {
+    text-align: center;
+    font-weight: 700;
+    text-shadow: 12px;
+    text-decoration: solid;
+}
+
+/* Styling  for responsive CSS navbar */
+
+/* Default behavior of hamburger menu */
+/* This line of code makes it so you cannot see the checkbox */
+/* hide the checkbox for default hamburger menu behavior */
+input[type="checkbox"] {
+    display: none;
+}
+
+/* This line of code makes it so you cannot see the hamburger in default */
+/* hide hamburger icon in default state */
+.hamburger {
+    display: none;
+    font-size: 28px;
+    user-select: none;
+}
+
+/* responsive behavior through CSS media queries */
+@media (max-width: 768px) {
+
+    /* First thing we do is style the menu when it goes below 768px --> we are hiding the orignal menu */
+    /* hide original menu and style dropdown menu */
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: teal;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0px;
+    }
+
+    /* This is the background color of the linked list when you hover over it */
+    /* change background color of menu option when hovered over */
+    .menu li:hover {
+        display: inline-block;
+        background-color: teal;
+        transform: 0.3s ease;
+    }
+
+    /* Providing margins to the menu's child and its siblings */
+    /* set margin for menu options */
+    .menu li+li {
+        margin-top: 12px;
+    }
+
+    /* When the checkbox is checked, display .menu as block (when hamburger button is clicked show menu) */
+        /* display menu when checkbox is checked */
+    input[type="checkbox"]:checked~.menu {
+        display: block;
+    }
+
+    /* Hamburger menu is set as display block */
+    .hamburger {
+        display: block;
+    }
+
+    /* show the project's dropdown menu on the side (instead of straight down) */
+    .dropdown {
+        left: 50%;
+        top: 30px;
+        transform: translateX(35%);
+    }
+
+    /* add color for what the dropdown menu when you hover over it */
+    .dropdown li:hover {
+        background-color: #4c6e44;
+    }
+}
