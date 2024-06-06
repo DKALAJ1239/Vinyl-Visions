@@ -1,4 +1,4 @@
-# CSI-3150-Phase-I
+# Vinyl Visions | Mock Vinyl Website
 
 Original GitHub: https://github.com/DKALAJ1239/CSI-3150
 
